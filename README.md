@@ -28,6 +28,37 @@ As a data engineer you have asked all the employees to show their preferences on
 - If you want to make the maintenance guy happy, a basketball stadium must be around 10 Km.
 - The office dog—"Dobby" needs a hairdresser every month. Ensure there's one not too far away.
 
+## How to approach it
+
+Notice you'll have to do two things: 
+
+1. Query the database
+2. Use an API to get venues (and for this, you'll need a starting point; some coordinates from which you will call the API)
+3. Justify your decision using data, not just visualization. How? Maybe measuring distances, maybe assinging weights depending on the importance of your criteria, maybe calculating the density of schools/Starbucks, etc.
+
+There is a couple of ways you can do this: 
+#### Option A
+From the existing **companies**, choose one to steal their current venue 🥷: query and filter the database based on some of your criteria. Then use an API to do queries (from those companies) and check the companies' surroundings to check the other criteria.
+
+Your result will be `coordinates`.
+
+#### Option B
+Choose three **cities** that exist in your database. From these cities, query and filter the database according to any other criteria if necessary. Then, make API calls to see if the rest of your criteria are met. Then, compare the three cities. Are any of them better than the other two? Using data, justify why. 
+
+Once you chose the city, what would be an approximate location?
+
+Your result will be `a city` and a neighbourhood/zip code or adress/coordinates.
+
+
+#### Option C
+Be creative. But remember: always try to follow a general-to-specific approach and base your decisions always using data. 
+
+
+# BONUS
+
+You found a perfect location for your company: but it's either taken by another company or there's too many options in the city you chose. After all, a whole city is not too specific.
+
+Web scrape real state sites 🏠 to get the best prices and choose a neighbourhood, a block or an adress.
 ## Help
 
 - Always use standard GeoJSON Point `{ type: "Point", coordinates: [ 40, 5 ] }`
@@ -37,9 +68,10 @@ As a data engineer you have asked all the employees to show their preferences on
 ## How to deliver the project
 
 - Create a new repo in your github account.
-- Do a PR with the link of your repo copy pasted inside `my-project.md` (within the parentheses) on this repo.
-- You must justify your decision with a map, use visualization tools like (tableau, folium, cartoframes, etc.)
-- Provide `lat` and `long` for the new office proposals.
+- Create an issue with the link of your repo copy pasted inside `my-project.md` (within the parentheses) on this repo.
+- You must justify your decision with data
+- You may use visualization tools like (tableau, folium, cartoframes, etc.)
+- **You must provide `lat` and `long` for the new office proposals.**
 
 ## Links & Resources
 
