@@ -49,12 +49,11 @@ Once you chose the city, what would be an approximate location?
 
 Your result will be `a city` and a neighbourhood/zip code or adress/coordinates.
 
-
-#### Option C
+#### Option C
 Be creative. But remember: always try to follow a general-to-specific approach and base your decisions always using data. 
 
 
-# BONUS
+# BONUS
 
 You found a perfect location for your company: but it's either taken by another company or there's too many options in the city you chose. After all, a whole city is not too specific.
 
